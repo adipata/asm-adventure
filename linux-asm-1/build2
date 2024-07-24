@@ -1,0 +1,3 @@
+nasm -f elf32 simple2.asm -o simple2.o
+ld -m elf_i386 -dynamic-linker /lib/ld-linux.so.2 -o simple2 simple2.o -lc
+
